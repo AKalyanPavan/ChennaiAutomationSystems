@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import success from './../images/two-person-handshake-with-each-other-smiling.png';
 import aims from './../images/Aims.jpg';
+import logo from './../images/logo.png';
 
 function Homepage() {
 	const [modalDisplay, setModalDisplay] = useState("hidden");
@@ -88,13 +89,9 @@ function Homepage() {
 				</div>
 
 				{/*Header*/}
-				<div id="header" className="flex items-center justify-between">
-					<div className="flex items-center">
-						<svg width="50" height="60" viewBox="0 0 24 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M0.000305176 10.0115C0.000305176 4.7032 4.30351 0.399994 9.61179 0.399994H23.0679V19.2385C23.0679 24.5468 18.7647 28.85 13.4564 28.85H0.000305176V10.0115Z" fill="#1B1642"/>
-						</svg>
-						<span className="text-[#FFFFFF] ml-[-38px] font-bold text-[35px]">A</span>
-						<span className="text-[30px] font-bold ml-[15px]">ims.</span>
+				<div id="header" className="sticky top-[0px] bg-[#ffffff] py-[10px] sm:flex items-center justify-between">
+					<div className="w-[250px] max-sm:mx-auto max-sm:mb-[20px]">
+						<img src={logo} />
 					</div>
 					{/* <div className="border-[#2F6AD9] border-[2px] border-solid p-[5px] rounded-[5px] min-[1000px]:hidden cursor-pointer" onClick={onBurgerMenuClicked}>
 						<svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -104,12 +101,12 @@ function Homepage() {
 						</svg>
 					</div> */}
 
-					<div className="flex items-center text-[16px] font-medium max-[999px]:hidden">
+					<div className="flex items-center text-[16px] font-medium">
 						{/* <div className="mr-[25px] cursor-pointer" onClick={() => onMenuItemClicked('#home')}>Home</div>
 						<div className="mr-[25px] cursor-pointer" onClick={() => onMenuItemClicked('#aboutus')}>About Us</div>
 						<div className="mr-[25px] cursor-pointer" onClick={() => onMenuItemClicked('#ourservices')}>Our Services</div>
 						<div className="mr-[25px] cursor-pointer" onClick={() => onMenuItemClicked('#casestudies')}>Case Studies</div> */}
-						<a href="https://calendly.com/angelinvestormarketingservices" target="_blank">
+						<a className="max-sm:mx-auto" href="https://calendly.com/angelinvestormarketingservices" target="_blank">
 							<button className="bg-[#2F6AD9] px-[20px] py-[15px] rounded-[5px] text-[#ffffff]">
 								Contact Us
 							</button>
@@ -212,10 +209,10 @@ function Homepage() {
 							<div className="text-[#677788]">Bringing manufacturing into the digital age with IoT services, enabling real-time monitoring, data analytics, and improved decision-making for operational efficiency.</div>
 						</div>
 						<div className="p-[20px] rounded-[10px]">
-							<svg className="mx-auto" fill="#387cff" height="60px" width="60px" version="1.1" id="Layer_1" viewBox="0 0 512.001 512.001">
+							<svg className="mx-auto" version="1.1" id="designs" width="60px" height="60px" viewBox="0 0 32 32" fill="#387cff">
 								<g id="SVGRepo_bgCarrier" stroke-width="0"/>
 								<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-								<g id="SVGRepo_iconCarrier"> <g> <g> <polygon points="204.497,205.165 159.03,205.165 159.03,256.44 215.255,256.44 "/> </g> </g> <g> <g> <polygon points="438.621,124.697 438.621,157.523 408.204,157.523 408.204,124.697 367.934,124.697 367.934,224.887 478.89,224.887 478.89,124.697 "/> </g> </g> <g> <g> <path d="M509.307,355.494H478.89v-100.19h-40.269v32.825h-30.417v-32.825h-40.269v100.19H338.78V94.28V75.202h-30.417v280.292 h-14.291V270.07l-29.214-139.242H84.691V256.44H0v129.47h20.265c8.938-20.763,29.592-35.339,53.593-35.339 c24.001,0,44.655,14.577,53.593,35.339h39.17c8.938-20.763,29.592-35.339,53.593-35.339c24.001,0,44.655,14.577,53.593,35.339 h5.056h15.209h43.447h171.79h2.693v-30.417H509.307z M128.613,286.858V174.748h100.583l23.521,112.109H128.613z"/> </g> </g> <g> <g> <circle cx="73.858" cy="408.896" r="27.903"/> </g> </g> <g> <g> <circle cx="220.21" cy="408.896" r="27.903"/> </g> </g> </g>
+								<g id="SVGRepo_iconCarrier"> <path class="scienceandfiction_twee" d="M7,6.5v11H6.001v-11h1H7z M8.001,6.5v11H9v-11H8.001z M10.001,6.5v11H11v-11H10.001z M12.001,6.5v11H13v-11H12.001z M14,6.5v11h1v-11H14z M17,6.5h-1v11h1V6.5L17,6.5z M19,6.5h-1v11h1V6.5L19,6.5z"/> <path class="scienceandfiction_een" d="M9.5,21C8.672,21,8,21.672,8,22.5S8.672,24,9.5,24s1.5-0.672,1.5-1.5S10.328,21,9.5,21z M9.5,23C9.224,23,9,22.776,9,22.5S9.224,22,9.5,22s0.5,0.224,0.5,0.5S9.776,23,9.5,23z M21.5,21c-0.828,0-1.5,0.672-1.5,1.5 s0.672,1.5,1.5,1.5s1.5-0.672,1.5-1.5S22.328,21,21.5,21z M21.5,23c-0.276,0-0.5-0.224-0.5-0.5s0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5 S21.776,23,21.5,23z M25,10h-4V6H4v11H3v5h3.05C6.027,22.165,6,22.329,6,22.5C6,24.433,7.567,26,9.5,26s3.5-1.567,3.5-3.5 c0-0.171-0.027-0.335-0.05-0.5h5.101C18.027,22.165,18,22.329,18,22.5c0,1.933,1.567,3.5,3.5,3.5s3.5-1.567,3.5-3.5 c0-0.171-0.027-0.335-0.05-0.5H28v-6L25,10z M5,7h15v10H5V7z M9.5,25C8.122,25,7,23.879,7,22.5S8.122,20,9.5,20s2.5,1.121,2.5,2.5 S10.878,25,9.5,25z M21.5,25c-1.378,0-2.5-1.121-2.5-2.5s1.122-2.5,2.5-2.5s2.5,1.121,2.5,2.5S22.878,25,21.5,25z M27,21h-2.35 c-0.563-1.179-1.756-2-3.15-2s-2.587,0.821-3.15,2H12.65c-0.563-1.179-1.756-2-3.15-2s-2.587,0.821-3.15,2H4v-3h17v-7h1v6h3v2h2V21z M27,18h-1v-1h1V18z M23,16v-5h1.434L27,16H23z"/> </g>
 							</svg>
 							<div className="text-[20px] text-[#1E2022] font-medium mb-[30px] mt-[20px]">Machinery Import & Export</div>
 							<div className="text-[#677788]">Facilitating the smooth import and export of high-quality machinery, leveraging global networks to provide efficient solutions for acquiring or selling equipment.</div>
@@ -238,6 +235,22 @@ function Homepage() {
 							<div className="text-[20px] text-[#1E2022] font-medium my-[30px]">Marketing & Sales</div>
 							<div className="text-[#677788]">Guiding through the complexities of machinery and CNC product sales, offering strategic marketing services to connect with the right products and achieve business success.</div>
 						</div>
+						<div className="p-[20px] rounded-[10px]">
+							<svg className="mx-auto" fill="#387cff" height="60px" width="60px" version="1.1" id="Layer_1" viewBox="0 0 512.001 512.001">
+								<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+								<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+								<g id="SVGRepo_iconCarrier"> <g> <g> <polygon points="204.497,205.165 159.03,205.165 159.03,256.44 215.255,256.44 "/> </g> </g> <g> <g> <polygon points="438.621,124.697 438.621,157.523 408.204,157.523 408.204,124.697 367.934,124.697 367.934,224.887 478.89,224.887 478.89,124.697 "/> </g> </g> <g> <g> <path d="M509.307,355.494H478.89v-100.19h-40.269v32.825h-30.417v-32.825h-40.269v100.19H338.78V94.28V75.202h-30.417v280.292 h-14.291V270.07l-29.214-139.242H84.691V256.44H0v129.47h20.265c8.938-20.763,29.592-35.339,53.593-35.339 c24.001,0,44.655,14.577,53.593,35.339h39.17c8.938-20.763,29.592-35.339,53.593-35.339c24.001,0,44.655,14.577,53.593,35.339 h5.056h15.209h43.447h171.79h2.693v-30.417H509.307z M128.613,286.858V174.748h100.583l23.521,112.109H128.613z"/> </g> </g> <g> <g> <circle cx="73.858" cy="408.896" r="27.903"/> </g> </g> <g> <g> <circle cx="220.21" cy="408.896" r="27.903"/> </g> </g> </g>
+							</svg>
+							<div className="text-[20px] text-[#1E2022] font-medium my-[30px]">Machine Relocation Services</div>
+							<div className="text-[#677788]">we offer comprehensive relocation services for everything ranging from heavy machinery to complete production lines making your relocation activity a seamless experience.</div>
+						</div>
+						<div className="p-[20px] rounded-[10px]">
+							<svg className="mx-auto" fill="#387cff" width="50px" height="50px" viewBox="0 0 50 50">
+								<path d="M39 2.03125C38.738281 2.0625 38.503906 2.199219 38.34375 2.40625L35.34375 6.21875C34.78125 5.488281 33.898438 5 32.90625 5L30.09375 5C28.394531 5 27 6.394531 27 8.09375L27 15.90625C27 17.605469 28.394531 19 30.09375 19L32.90625 19C33.898438 19 34.78125 18.511719 35.34375 17.78125L38.34375 21.59375C38.636719 21.960938 39.148438 22.066406 39.5625 21.84375L49.46875 16.4375C49.882813 16.214844 50.074219 15.730469 49.929688 15.285156C49.78125 14.835938 49.339844 14.5625 48.875 14.625C48.753906 14.644531 48.636719 14.6875 48.53125 14.75L39.375 19.78125L36 15.5L36 8.53125L39.375 4.25L48.53125 9.25C48.835938 9.457031 49.230469 9.472656 49.550781 9.292969C49.871094 9.113281 50.0625 8.769531 50.042969 8.402344C50.027344 8.035156 49.804688 7.710938 49.46875 7.5625L39.5625 2.15625C39.390625 2.058594 39.195313 2.015625 39 2.03125 Z M 9 3C4.039063 3 0 7.039063 0 12C0 16.960938 4.039063 21 9 21C13.960938 21 18 16.960938 18 12C18 7.039063 13.960938 3 9 3 Z M 18.6875 7C19.480469 8.519531 20 10.171875 20 12C20 13.828125 19.480469 16.480469 18.6875 18L24.96875 18C24.894531 17.652344 24.90625 16.367188 24.90625 16L24.90625 8C24.90625 7.632813 24.894531 7.347656 24.96875 7 Z M 9 7.34375C11.558594 7.34375 13.65625 9.441406 13.65625 12C13.65625 14.558594 11.558594 16.65625 9 16.65625C6.441406 16.65625 4.34375 14.558594 4.34375 12C4.34375 9.441406 6.441406 7.34375 9 7.34375 Z M 17.8125 18.5625C15.804688 21.242188 12.601563 23 9 23C7.773438 23 6.601563 22.777344 5.5 22.40625L14.28125 38.96875L29.34375 38.96875 Z M 6.875 41C5.253906 41 4 42.316406 4 44L4 49C4 49.582031 4.417969 50 5 50L39 50C39.582031 50 40 49.582031 40 49L40 44C40 42.316406 38.746094 41 37.125 41Z"/>
+							</svg>
+							<div className="text-[20px] text-[#1E2022] font-medium mb-[30px] mt-[40px]">Machine Tending Robots</div>
+							<div className="text-[#677788]">we offer turn key solutions for applications such as machine tending, gantry systems , fettling for various industries rangong from foundries to automobile plants.</div>
+						</div>
 					</div>
 				</div>
 
@@ -246,7 +259,12 @@ function Homepage() {
 					<div className="flex items-start my-[70px] items-center">
 						<div className="">
 							<div className="text-[32px] text-[#1B1642] font-bold">Our Impact</div>
-							<div className="text-[16px] text-[#677788] mt-[20px]">Chennai Automation Systems enhances manufacturing with innovative solutions, optimizing efficiency and precision across diverse industries.</div>
+							<div className="text-[16px] text-[#677788] mt-[20px]">
+								At Chennai Automation Systems, we believe in creating lasting impact through cutting-edge solutions that transform manufacturing processes.Over the past three decades, we have empowered industries to achieve new levels of operational excellence by delivering superior automation and CNC machining services. 
+								<br />
+								<br />
+								Our commitment to quality, innovation, and customer satisfaction has helped businesses enhance their production capabilities, minimize downtime, and optimize efficiency.Our impact is measured by the success of our clients. We are proud to be a trusted partner for industries striving for excellence, innovation, and sustainable growth.
+							</div>
 						</div>
 						<img className="w-[50%] h-[25%] rounded-[20px] ml-[40px] max-[1000px]:hidden" src={success} alt="Success Stories"/>
 					</div>
