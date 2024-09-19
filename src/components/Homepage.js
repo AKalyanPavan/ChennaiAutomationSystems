@@ -90,7 +90,7 @@ function Homepage() {
 
 				{/*Header*/}
 				<div id="header" className="sticky top-[0px] bg-[#ffffff] py-[10px] sm:flex items-center justify-between">
-					<div className="w-[250px] max-sm:mx-auto max-sm:mb-[20px]">
+					<div className="w-[200px] max-sm:mx-auto max-sm:mb-[20px]">
 						<img src={logo} />
 					</div>
 					{/* <div className="border-[#2F6AD9] border-[2px] border-solid p-[5px] rounded-[5px] min-[1000px]:hidden cursor-pointer" onClick={onBurgerMenuClicked}>
